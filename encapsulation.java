@@ -1,6 +1,6 @@
-public class encapsulation{
+public class Encapsulation{
     private int value;
-    public encapsulation(){ // counstructer
+    public Encapsulation(){ // counstructer
         value = 5 ;
     }
     public int getvalue(){ 
@@ -13,7 +13,7 @@ public class encapsulation{
         encapsulation reference = new encapsulation(); // counstructer 
         // System.out.println("VALUE degeri : " + reference.value);
         // Java da  private olan bir değişkeni direk olarak erişim yoktur.
-        // getter methodu tanımlayıp direk erişebiliriz.
+        // getter methodu tanımlayıp dolaylı yoldan erişebiliriz.
         System.out.println("VALUE degeri : " + reference.getvalue());
         // setter methodu tanımlayıp direş erişip değiştirebiliriz.
         reference.setvalue(6);
