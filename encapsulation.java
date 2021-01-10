@@ -23,7 +23,7 @@ public class encapsulation{
         // If the getter method is defined, we can access it indirectly using the getter method.
         System.out.println("VALUE degeri : " + reference.getvalue());
         
-        // refenrence.value = 10;  If the setter method is defined, we can change it indirectly by using the setter method.
+        // Refenrence.value = 10;  If the setter method is defined, we can change it indirectly by using the setter method.
         reference.setvalue(6);
         
         System.out.println("VALUE degeri : " + reference.getvalue());
