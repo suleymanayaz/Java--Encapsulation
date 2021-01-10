@@ -1,7 +1,8 @@
 # Java--Encapsulation
-# Yazılan kodları incelediğinizde kazanacaklarınız :
-# 1- Javada Bir sınıf nasıl oluşturulur.
-# 2- Javada oluşturulan sınıfdaki nesnelere erişmek.
-# 3- Javada erişilen nesnelerin özelliklerine erişip değiştirmek.
-# 4- Javada overload methodlar oluşturulup overload yapma.
-# BİLGİ EDİNMENİZ DİLEĞİYLE...
+# When you examine the written codes, you will gain:
+ 1- How to create a class in Java.
+ 2- Accessing objects in the class created in Java.
+ 3- Access and change the properties of objects accessed in Java.
+ 4- Creating and overloading methods in Java.
+ 
+# WISH YOU TO GET INFORMATION ...
