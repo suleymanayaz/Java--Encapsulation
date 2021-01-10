@@ -1,53 +1,56 @@
-public class human{
-    private String cinsiyet;
-    private String isim;
-    private int yasi;   
+public class Human{
+    private String gender;
+    private String name;
+    private int age;   
+    
     public human(){
         // counstructer method
-        this.cinsiyet = NULL;
-        this.isim = NULL;
-        this.yasi = 0;
-
+        this.gender = NULL;
+        this.name = NULL;
+        this.age = 0;
     }
-    public human(String cinsiyet, int yasi, String isim){
-        // counstructer overload method yaptık 
-        // overload method aynı isime sahip methodların(dönüş tipleri önemli değil) aldigi
-        // parametreler cinsinden ayrımına denir.
-        this.cinsiyet = cinsiyet;
-        this.yasi = yasi;
-        this.isim = isim;
+    
+    public human(String gender, int age, String name){
+        // We did the constructor overload method
+        // The overload method separates methods with the same name (return types do not matter) in terms of their received parameters.
+        // this.gender = object variable  , gender = local variable
+        // this.age = object variable  , age = local variable
+        // this.namer = object variable  , name = local variable
+        this.gender = gender;
+        this.age = age;
+        this.name = name;
     }
-        public String getcinsiyet(){
-            return cinsiyet;
+        public String getGender(){
+            return this.gender;
         }    
-        public int getyasi(){
-            return yasi;
+        public int getAge(){
+            return age;
         }
-        public String getisim(){
-            return isim;
+        public String getName(){
+            return this.name;
         }
-        public void setcinsiyet(String cinsiyet){
-            this.cinsiyet = cinsiyet;
+        public void setcinsiyet(String gender){
+            this.gender = gender;
         }
-        public void setyasi(int yasi){
-            this.yasi = yasi;
+        public void setAge(int age){
+            this.age = age;
         }
-        public void setisim(String isim){
-            this.isim = isim;
+        public void setName(String name){
+            this.name = name;
         }
         public boolean thanbig(human x){
-            return this.yasi > x.yasi;
+            return this.age > x.age;
         }
-        public boolean overad(human x){
+        public boolean overName(human x){
             return this.isim == x.isim;
         }
-        public boolean equalgender(human x){
-            return this.cinsiyet == x.cinsiyet;
+        public boolean equalGender(human x){
+            return this.gender== x.gender;
         }
         public static void main(String []args){
-            human sulo = new human("Erkek" , 19 , "Suleyman"); 
-            human murat = new human("Erkek" , 20 ,"Murat");
-            human gizem = new human("Kadın" , 18 , "Gizem");
+            Human sulo = new Human("Erkek" , 19 , "Suleyman"); 
+            Human murat = new Human("Erkek" , 20 ,"Murat");
+            Human gizem = new Human("Kadın" , 18 , "Gizem");
             System.out.print(sulo.isim + " " + murat.isim + "'dan yaşca ");
             System.out.println(sulo.thanbig(murat)?"buyuktur":"kucuktur");
             System.out.print(sulo.isim + " " + gizem.isim + "'dan yaşca ");
