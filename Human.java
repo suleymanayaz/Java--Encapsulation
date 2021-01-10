@@ -3,14 +3,14 @@ public class Human{
     private String name;
     private int age;   
     
-    public human(){
+    public Human(){
         // counstructer method
         this.gender = NULL;
         this.name = NULL;
         this.age = 0;
     }
     
-    public human(String gender, int age, String name){
+    public Human(String gender, int age, String name){
         // We did the constructor overload method
         // The overload method separates methods with the same name (return types do not matter) in terms of their received parameters.
         // this.gender = object variable  , gender = local variable
