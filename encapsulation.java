@@ -1,22 +1,31 @@
-public class Encapsulation{
+public class EncapsulationPrivateVariableExample{
     private int value;
-    public Encapsulation(){ // counstructer
+    
+    public EncapsulationPrivateVariableExample(){ // counstructer
         value = 5 ;
     }
+    
     public int getvalue(){ 
         return value ;
     }
+    
     public void setvalue(int value){
         this.value = value ;
     }
+    
+}
+
+public class encapsulation{
     public static void main(String [] args){
-        encapsulation reference = new encapsulation(); // counstructer 
-        // System.out.println("VALUE degeri : " + reference.value);
-        // Java da  private olan bir değişkeni direk olarak erişim yoktur.
-        // getter methodu tanımlayıp dolaylı yoldan erişebiliriz.
+        EncapsulationPrivateVariableExample reference = new EncapsulationPrivateVariableExample(); // counstructer 
+        // System.out.println("VALUE degeri : " + reference.value); There is no direct access to a variable that is private in Java.
+        
+        // If the getter method is defined, we can access it indirectly using the getter method.
         System.out.println("VALUE degeri : " + reference.getvalue());
-        // setter methodu tanımlayıp direş erişip değiştirebiliriz.
+        
+        // refenrence.value = 10;  If the setter method is defined, we can change it indirectly by using the setter method.
         reference.setvalue(6);
+        
         System.out.println("VALUE degeri : " + reference.getvalue());
     }
 }
